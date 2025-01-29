@@ -2,6 +2,9 @@
 
 This project is a comprehensive authentication system with a Node.js/Express backend and a Next.js frontend.
 
+Live Demo : https://frontend-production-50fe.up.railway.app/
+
+Postman Collection: https://orange-escape-693012.postman.co/workspace/Personal-Workspace~33c15f4c-baf4-483d-8491-e263dc7ed470/collection/24497684-f7dbd756-5a95-495e-b312-67dad21afca6?action=share&creator=24497684
 ## Features
 
 - User registration and login
@@ -33,31 +36,6 @@ This project is a comprehensive authentication system with a Node.js/Express bac
 - Socket.IO client for real-time features
 - Zod for form validation
 
-## Project Structure
-project-root/
-├── backend/
-│   ├── src/
-│   │   ├── config/
-│   │   ├── controllers/
-│   │   ├── middleware/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── utils/
-│   │   └── server.js
-│   ├── .env
-│   ├── package.json
-│   └── Dockerfile
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-│   ├── public/
-│   ├── .env.local
-│   ├── next.config.js
-│   ├── package.json
-│   └── Dockerfile
-├── docker-compose.yml
-└── README.md
 
 
 ## Setup and Installation
@@ -69,33 +47,48 @@ project-root/
 
 ### Environment Variables
 
-1. Backend (.env file in backend directory):
-PORT=5000
-NODE_ENV=development
-MONGODB_URI=mongodb+srv://suryatech128:surya@authsystem.vgpfu.mongodb.net/auth?retryWrites=true&w=majority&appName=authsystem
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USER=suryatech128@gmail.com
-EMAIL_PASS=uetk ywbo bljk bubc
-EMAIL_FROM=suryatech128@gmail.com
-ACCESS_TOKEN_SECRET=your_access_token_secret_here
-REFRESH_TOKEN_SECRET=your_refresh_token_secret_here
-FRONTEND_URL=http://localhost:3000
-RATE_LIMIT_WINDOW_MS=900000
-RATE_LIMIT_MAX=100
-GOOGLE_CLIENT_ID=35998161146-curhb31ut84oluvvagh8re4r41gpoopm.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
+## 1. Backend (.env file in backend directory):
+   
+`PORT`=5000
 
+`NODE_ENV`=development
 
-2. Frontend (.env.local file in frontend directory):
-NEXT_PUBLIC_API_URL=[http://localhost:5000](http://localhost:5000)
+`MONGODB_URI`="mongodb+srv://suryatech128:surya@authsystem.vgpfu.mongodb.net/auth?retryWrites=true&w=majority&appName=authsystem"
+
+`EMAIL_HOST`="smtp.gmail.com"
+
+`EMAIL_PORT`=587
+
+`EMAIL_USER`="suryatech128@gmail.com"
+
+`EMAIL_PASS`="uetk ywbo bljk bubc"
+
+`EMAIL_FROM`="suryatech128@gmail.com"
+
+`ACCESS_TOKEN_SECRET`="test_access_token_secret"
+
+`REFRESH_TOKEN_SECRET`="test_refresh_token_secret"
+
+`FRONTEND_URL`="http://localhost:3000"
+
+`RATE_LIMIT_WINDOW_MS`=900000
+
+`RATE_LIMIT_MAX`=100
+
+`GOOGLE_CLIENT_ID`="35998161146-curhb31ut84oluvvagh8re4r41gpoopm.apps.googleusercontent.com"
+
+`GOOGLE_CLIENT_SECRET`="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"
+
+## 2. Frontend (.env.local file in frontend directory):
+   
+`NEXT_PUBLIC_API_URL`=[http://localhost:5000](http://localhost:5000)
 
 
 ### Running Locally
 
 1. Clone the repository:
-git clone [https://your-repository-url.git](https://your-repository-url.git)
-cd your-project-name
+git clone [https://y2y_auth.git](https://y2y_auth.git)
+cd y2y_auth
 
 2. Install dependencies:
 cd backend && npm install
